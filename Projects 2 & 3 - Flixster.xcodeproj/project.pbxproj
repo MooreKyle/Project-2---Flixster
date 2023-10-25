@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F467FB92AE99FEE0077D73E /* Project 2 - Flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2 - Flixster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F467FB92AE99FEE0077D73E /* Project 2 & 3 - Flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2 & 3 - Flixster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F467FBC2AE99FEE0077D73E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F467FBE2AE99FEE0077D73E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F467FC02AE99FEE0077D73E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,9 +44,9 @@
 		3F467FC52AE99FEF0077D73E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F467FC82AE99FEF0077D73E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F467FCA2AE99FEF0077D73E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F467FCF2AE99FF10077D73E /* Project 2 - FlixsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 2 - FlixsterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F467FCF2AE99FF10077D73E /* Project 2 & 3 - FlixsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 2 & 3 - FlixsterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F467FD32AE99FF10077D73E /* Project_2___FlixsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_2___FlixsterTests.swift"; sourceTree = "<group>"; };
-		3F467FD92AE99FF10077D73E /* Project 2 - FlixsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 2 - FlixsterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F467FD92AE99FF10077D73E /* Project 2 & 3 - FlixsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 2 & 3 - FlixsterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F467FDD2AE99FF10077D73E /* Project_2___FlixsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_2___FlixsterUITests.swift"; sourceTree = "<group>"; };
 		3F467FDF2AE99FF10077D73E /* Project_2___FlixsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_2___FlixsterUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,9 +89,9 @@
 		3F467FBA2AE99FEE0077D73E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F467FB92AE99FEE0077D73E /* Project 2 - Flixster.app */,
-				3F467FCF2AE99FF10077D73E /* Project 2 - FlixsterTests.xctest */,
-				3F467FD92AE99FF10077D73E /* Project 2 - FlixsterUITests.xctest */,
+				3F467FB92AE99FEE0077D73E /* Project 2 & 3 - Flixster.app */,
+				3F467FCF2AE99FF10077D73E /* Project 2 & 3 - FlixsterTests.xctest */,
+				3F467FD92AE99FF10077D73E /* Project 2 & 3 - FlixsterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F467FB82AE99FEE0077D73E /* Project 2 - Flixster */ = {
+		3F467FB82AE99FEE0077D73E /* Project 2 & 3 - Flixster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F467FE32AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 - Flixster" */;
+			buildConfigurationList = 3F467FE32AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 & 3 - Flixster" */;
 			buildPhases = (
 				3F467FB52AE99FEE0077D73E /* Sources */,
 				3F467FB62AE99FEE0077D73E /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = "Project 2 - Flixster";
+			name = "Project 2 & 3 - Flixster";
 			productName = "Project 2 - Flixster";
-			productReference = 3F467FB92AE99FEE0077D73E /* Project 2 - Flixster.app */;
+			productReference = 3F467FB92AE99FEE0077D73E /* Project 2 & 3 - Flixster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3F467FCE2AE99FF10077D73E /* Project 2 - FlixsterTests */ = {
+		3F467FCE2AE99FF10077D73E /* Project 2 & 3 - FlixsterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F467FE62AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 - FlixsterTests" */;
+			buildConfigurationList = 3F467FE62AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 & 3 - FlixsterTests" */;
 			buildPhases = (
 				3F467FCB2AE99FF10077D73E /* Sources */,
 				3F467FCC2AE99FF10077D73E /* Frameworks */,
@@ -160,14 +160,14 @@
 			dependencies = (
 				3F467FD12AE99FF10077D73E /* PBXTargetDependency */,
 			);
-			name = "Project 2 - FlixsterTests";
+			name = "Project 2 & 3 - FlixsterTests";
 			productName = "Project 2 - FlixsterTests";
-			productReference = 3F467FCF2AE99FF10077D73E /* Project 2 - FlixsterTests.xctest */;
+			productReference = 3F467FCF2AE99FF10077D73E /* Project 2 & 3 - FlixsterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3F467FD82AE99FF10077D73E /* Project 2 - FlixsterUITests */ = {
+		3F467FD82AE99FF10077D73E /* Project 2 & 3 - FlixsterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F467FE92AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 - FlixsterUITests" */;
+			buildConfigurationList = 3F467FE92AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 & 3 - FlixsterUITests" */;
 			buildPhases = (
 				3F467FD52AE99FF10077D73E /* Sources */,
 				3F467FD62AE99FF10077D73E /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				3F467FDB2AE99FF10077D73E /* PBXTargetDependency */,
 			);
-			name = "Project 2 - FlixsterUITests";
+			name = "Project 2 & 3 - FlixsterUITests";
 			productName = "Project 2 - FlixsterUITests";
-			productReference = 3F467FD92AE99FF10077D73E /* Project 2 - FlixsterUITests.xctest */;
+			productReference = 3F467FD92AE99FF10077D73E /* Project 2 & 3 - FlixsterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3F467FB42AE99FEE0077D73E /* Build configuration list for PBXProject "Project 2 - Flixster" */;
+			buildConfigurationList = 3F467FB42AE99FEE0077D73E /* Build configuration list for PBXProject "Project 2 & 3 - Flixster" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +219,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F467FB82AE99FEE0077D73E /* Project 2 - Flixster */,
-				3F467FCE2AE99FF10077D73E /* Project 2 - FlixsterTests */,
-				3F467FD82AE99FF10077D73E /* Project 2 - FlixsterUITests */,
+				3F467FB82AE99FEE0077D73E /* Project 2 & 3 - Flixster */,
+				3F467FCE2AE99FF10077D73E /* Project 2 & 3 - FlixsterTests */,
+				3F467FD82AE99FF10077D73E /* Project 2 & 3 - FlixsterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,12 +286,12 @@
 /* Begin PBXTargetDependency section */
 		3F467FD12AE99FF10077D73E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3F467FB82AE99FEE0077D73E /* Project 2 - Flixster */;
+			target = 3F467FB82AE99FEE0077D73E /* Project 2 & 3 - Flixster */;
 			targetProxy = 3F467FD02AE99FF10077D73E /* PBXContainerItemProxy */;
 		};
 		3F467FDB2AE99FF10077D73E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3F467FB82AE99FEE0077D73E /* Project 2 - Flixster */;
+			target = 3F467FB82AE99FEE0077D73E /* Project 2 & 3 - Flixster */;
 			targetProxy = 3F467FDA2AE99FF10077D73E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -507,7 +507,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 2 - Flixster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Project 2 - Flixster";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 2 & 3 - Flixster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Project 2 & 3 - Flixster";
 			};
 			name = Debug;
 		};
@@ -527,7 +527,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 2 - Flixster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Project 2 - Flixster";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 2 & 3 - Flixster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Project 2 & 3 - Flixster";
 			};
 			name = Release;
 		};
@@ -570,7 +570,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F467FB42AE99FEE0077D73E /* Build configuration list for PBXProject "Project 2 - Flixster" */ = {
+		3F467FB42AE99FEE0077D73E /* Build configuration list for PBXProject "Project 2 & 3 - Flixster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F467FE12AE99FF10077D73E /* Debug */,
@@ -579,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F467FE32AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 - Flixster" */ = {
+		3F467FE32AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 & 3 - Flixster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F467FE42AE99FF10077D73E /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F467FE62AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 - FlixsterTests" */ = {
+		3F467FE62AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 & 3 - FlixsterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F467FE72AE99FF10077D73E /* Debug */,
@@ -597,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F467FE92AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 - FlixsterUITests" */ = {
+		3F467FE92AE99FF10077D73E /* Build configuration list for PBXNativeTarget "Project 2 & 3 - FlixsterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F467FEA2AE99FF10077D73E /* Debug */,
