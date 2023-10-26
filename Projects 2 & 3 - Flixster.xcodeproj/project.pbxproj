@@ -17,6 +17,7 @@
 		3F467FDE2AE99FF10077D73E /* Project_2___FlixsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FDD2AE99FF10077D73E /* Project_2___FlixsterUITests.swift */; };
 		3F467FE02AE99FF10077D73E /* Project_2___FlixsterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FDF2AE99FF10077D73E /* Project_2___FlixsterUITestsLaunchTests.swift */; };
 		3F467FED2AE9C6EB0077D73E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F467FEC2AE9C6EB0077D73E /* Assets.xcassets */; };
+		3F467FF02AE9E5320077D73E /* movieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FEF2AE9E5310077D73E /* movieData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3F467FDD2AE99FF10077D73E /* Project_2___FlixsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_2___FlixsterUITests.swift"; sourceTree = "<group>"; };
 		3F467FDF2AE99FF10077D73E /* Project_2___FlixsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_2___FlixsterUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		3F467FEC2AE9C6EB0077D73E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F467FEF2AE9E5310077D73E /* movieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +83,11 @@
 		3F467FB02AE99FEE0077D73E = {
 			isa = PBXGroup;
 			children = (
+				3F467FEE2AE9E4D90077D73E /* Models */,
 				3F467FEC2AE9C6EB0077D73E /* Assets.xcassets */,
-				3F467FBB2AE99FEE0077D73E /* Project 2 - Flixster */,
-				3F467FD22AE99FF10077D73E /* Project 2 - FlixsterTests */,
-				3F467FDC2AE99FF10077D73E /* Project 2 - FlixsterUITests */,
+				3F467FBB2AE99FEE0077D73E /* Projects 2 & 3 - Flixster */,
+				3F467FD22AE99FF10077D73E /* Projects 2 & 3 - FlixsterTests */,
+				3F467FDC2AE99FF10077D73E /* Projects 2 & 3 - FlixsterUITests */,
 				3F467FBA2AE99FEE0077D73E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +102,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F467FBB2AE99FEE0077D73E /* Project 2 - Flixster */ = {
+		3F467FBB2AE99FEE0077D73E /* Projects 2 & 3 - Flixster */ = {
 			isa = PBXGroup;
 			children = (
 				3F467FBC2AE99FEE0077D73E /* AppDelegate.swift */,
@@ -110,24 +113,32 @@
 				3F467FC72AE99FEF0077D73E /* LaunchScreen.storyboard */,
 				3F467FCA2AE99FEF0077D73E /* Info.plist */,
 			);
-			path = "Project 2 - Flixster";
+			path = "Projects 2 & 3 - Flixster";
 			sourceTree = "<group>";
 		};
-		3F467FD22AE99FF10077D73E /* Project 2 - FlixsterTests */ = {
+		3F467FD22AE99FF10077D73E /* Projects 2 & 3 - FlixsterTests */ = {
 			isa = PBXGroup;
 			children = (
 				3F467FD32AE99FF10077D73E /* Project_2___FlixsterTests.swift */,
 			);
-			path = "Project 2 - FlixsterTests";
+			path = "Projects 2 & 3 - FlixsterTests";
 			sourceTree = "<group>";
 		};
-		3F467FDC2AE99FF10077D73E /* Project 2 - FlixsterUITests */ = {
+		3F467FDC2AE99FF10077D73E /* Projects 2 & 3 - FlixsterUITests */ = {
 			isa = PBXGroup;
 			children = (
 				3F467FDD2AE99FF10077D73E /* Project_2___FlixsterUITests.swift */,
 				3F467FDF2AE99FF10077D73E /* Project_2___FlixsterUITestsLaunchTests.swift */,
 			);
-			path = "Project 2 - FlixsterUITests";
+			path = "Projects 2 & 3 - FlixsterUITests";
+			sourceTree = "<group>";
+		};
+		3F467FEE2AE9E4D90077D73E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F467FEF2AE9E5310077D73E /* movieData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F467FF02AE9E5320077D73E /* movieData.swift in Sources */,
 				3F467FC12AE99FEE0077D73E /* ViewController.swift in Sources */,
 				3F467FBD2AE99FEE0077D73E /* AppDelegate.swift in Sources */,
 				3F467FBF2AE99FEE0077D73E /* SceneDelegate.swift in Sources */,
