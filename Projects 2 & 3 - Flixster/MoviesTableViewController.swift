@@ -39,12 +39,13 @@ class MoviesTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
 
         // Configure the cell...
         let movie = movies[indexPath.row]
-        cell.textLabel?.text = movie.title
-        cell.detailTextLabel?.text = movie.description
+        cell.titleLabel.text = movie.title
+        cell.descriptionLabel.text = movie.description
+        cell.posterImageView.image = UIImage(named: movie.posterImageName)
      
         //Set the image (Will need to load it from URL in part 2)
 
