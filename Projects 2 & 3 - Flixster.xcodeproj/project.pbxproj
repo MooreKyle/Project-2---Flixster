@@ -19,6 +19,8 @@
 		3F467FED2AE9C6EB0077D73E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F467FEC2AE9C6EB0077D73E /* Assets.xcassets */; };
 		3F467FF02AE9E5320077D73E /* movieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FEF2AE9E5310077D73E /* movieData.swift */; };
 		3F467FF42AEB18E70077D73E /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FF32AEB18E70077D73E /* MoviesTableViewController.swift */; };
+		3FABF3702AEC316D00E3CD01 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FABF36E2AEC316D00E3CD01 /* MovieCell.swift */; };
+		3FABF3712AEC316D00E3CD01 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FABF36F2AEC316D00E3CD01 /* MovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		3F467FEC2AE9C6EB0077D73E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F467FEF2AE9E5310077D73E /* movieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieData.swift; sourceTree = "<group>"; };
 		3F467FF32AEB18E70077D73E /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		3FABF36E2AEC316D00E3CD01 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		3FABF36F2AEC316D00E3CD01 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		3F467FB02AE99FEE0077D73E = {
 			isa = PBXGroup;
 			children = (
+				3FABF36D2AEC30FD00E3CD01 /* CustomCells */,
 				3F467FEE2AE9E4D90077D73E /* Models */,
 				3F467FEC2AE9C6EB0077D73E /* Assets.xcassets */,
 				3F467FBB2AE99FEE0077D73E /* Projects 2 & 3 - Flixster */,
@@ -142,6 +147,15 @@
 				3F467FEF2AE9E5310077D73E /* movieData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3FABF36D2AEC30FD00E3CD01 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				3FABF36E2AEC316D00E3CD01 /* MovieCell.swift */,
+				3FABF36F2AEC316D00E3CD01 /* MovieCell.xib */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +266,7 @@
 				3F467FC62AE99FEF0077D73E /* Assets.xcassets in Resources */,
 				3F467FED2AE9C6EB0077D73E /* Assets.xcassets in Resources */,
 				3F467FC42AE99FEE0077D73E /* Main.storyboard in Resources */,
+				3FABF3712AEC316D00E3CD01 /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +293,7 @@
 			files = (
 				3F467FF02AE9E5320077D73E /* movieData.swift in Sources */,
 				3F467FC12AE99FEE0077D73E /* ViewController.swift in Sources */,
+				3FABF3702AEC316D00E3CD01 /* MovieCell.swift in Sources */,
 				3F467FBD2AE99FEE0077D73E /* AppDelegate.swift in Sources */,
 				3F467FF42AEB18E70077D73E /* MoviesTableViewController.swift in Sources */,
 				3F467FBF2AE99FEE0077D73E /* SceneDelegate.swift in Sources */,
