@@ -42,7 +42,9 @@ class MoviesTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as? MovieCell else {
+            fatalError("Unable to dequeue MovieCell")
+        }
 
         // Configure the cell...
         let movie = movies[indexPath.row]
