@@ -15,6 +15,9 @@ class MoviesTableViewController: UITableViewController {
         
         super.viewDidLoad()
         
+        //Register your custom cell
+        tableView.register(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "MovieCell")
+        
         //Assigns the mock movie data to the movies property
         movies = movieData
 
