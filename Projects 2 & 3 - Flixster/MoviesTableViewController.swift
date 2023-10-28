@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoviesTableViewController: UITableViewController {
+class MoviesTableViewController: UITableViewController/*, UITableViewDataSource*/ {
 
     var movies: [Movie] = []
     
@@ -20,6 +20,15 @@ class MoviesTableViewController: UITableViewController {
         
         //Assigns the mock movie data to the movies property
         movies = movieData
+        
+        //Sample movie data
+        movies = [
+            Movie(title: "Movie 1", posterImageName: "poster1", description: "Description 1"),
+            Movie(title: "Movie 2", posterImageName: "poster2", description: "Description 2"),
+            Movie(title: "Movie 3", posterImageName: "poster3", description: "Description 3"),
+            Movie(title: "Movie 4", posterImageName: "poster4", description: "Description 4"),
+            Movie(title: "Movie 5", posterImageName: "poster5", description: "Description 5")
+        ]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
