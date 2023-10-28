@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0630A32AEC9FB10080783B /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0630A22AEC9FB10080783B /* Nuke */; };
+		3F0630A52AEC9FB10080783B /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0630A42AEC9FB10080783B /* NukeExtensions */; };
+		3F0630A72AEC9FB10080783B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0630A62AEC9FB10080783B /* NukeUI */; };
+		3F0630A92AEC9FB10080783B /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0630A82AEC9FB10080783B /* NukeVideo */; };
 		3F467FBD2AE99FEE0077D73E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FBC2AE99FEE0077D73E /* AppDelegate.swift */; };
 		3F467FBF2AE99FEE0077D73E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FBE2AE99FEE0077D73E /* SceneDelegate.swift */; };
 		3F467FC12AE99FEE0077D73E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467FC02AE99FEE0077D73E /* ViewController.swift */; };
@@ -66,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0630A72AEC9FB10080783B /* NukeUI in Frameworks */,
+				3F0630A32AEC9FB10080783B /* Nuke in Frameworks */,
+				3F0630A52AEC9FB10080783B /* NukeExtensions in Frameworks */,
+				3F0630A92AEC9FB10080783B /* NukeVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +182,12 @@
 			dependencies = (
 			);
 			name = "Projects 2 & 3 - Flixster";
+			packageProductDependencies = (
+				3F0630A22AEC9FB10080783B /* Nuke */,
+				3F0630A42AEC9FB10080783B /* NukeExtensions */,
+				3F0630A62AEC9FB10080783B /* NukeUI */,
+				3F0630A82AEC9FB10080783B /* NukeVideo */,
+			);
 			productName = "Project 2 - Flixster";
 			productReference = 3F467FB92AE99FEE0077D73E /* Projects 2 & 3 - Flixster.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +260,9 @@
 				Base,
 			);
 			mainGroup = 3F467FB02AE99FEE0077D73E;
+			packageReferences = (
+				3F0630A12AEC9FB10080783B /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 3F467FBA2AE99FEE0077D73E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -643,6 +660,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F0630A12AEC9FB10080783B /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F0630A22AEC9FB10080783B /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F0630A12AEC9FB10080783B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		3F0630A42AEC9FB10080783B /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F0630A12AEC9FB10080783B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		3F0630A62AEC9FB10080783B /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F0630A12AEC9FB10080783B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		3F0630A82AEC9FB10080783B /* NukeVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F0630A12AEC9FB10080783B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeVideo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F467FB12AE99FEE0077D73E /* Project object */;
 }
