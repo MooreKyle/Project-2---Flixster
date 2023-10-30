@@ -1,8 +1,8 @@
 //
-//  Track.swift
-//  lab-tunley
+//  Movie.swift
+//  Projects 2 & 3 - Flixster
 //
-//  Created by Charlie Hieger on 12/2/22.
+//  Created by Kyle Moore on 10/29/23.
 //
 
 import Foundation

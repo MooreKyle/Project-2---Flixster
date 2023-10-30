@@ -1,18 +1,18 @@
 //
-//  TrackCell.swift
-//  lab-tunley
+//  MovieCell.swift
+//  Projects 2 & 3 - Flixster
 //
-//  Created by student on 10/29/23.
+//  Created by Kyle Moore on 10/29/23.
 //
 
 import UIKit
 import Nuke
 
-class TrackCell: UITableViewCell {
+class MovieCell: UITableViewCell {
     
-    @IBOutlet weak var trackImageView: UIImageView!
-    @IBOutlet weak var trackNameLabel: UILabel!
-    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var movieTitleLabel: UILabel!
+    @IBOutlet weak var movieOverviewLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,11 +26,11 @@ class TrackCell: UITableViewCell {
     }
     
     /// Configures the cell's UI for the given track.
-    func configure(with track: Track) {
-        trackNameLabel.text = track.trackName
-        artistNameLabel.text = track.artistName
+    func configure(with movie: Movie) {
+        movieTitleLabel.text = movie.title
+        movieOverviewLabel.text = movie.overview
         
         // Load image async via Nuke library image loading helper method
-        Nuke.loadImage(with: track.artworkUrl100, into: trackImageView)
+        Nuke.loadImage(with: movie.posterImageURL, into: movieImageView)
     }
 }
