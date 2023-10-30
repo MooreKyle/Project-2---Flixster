@@ -19,7 +19,7 @@ struct Movie {
     let releaseDate: Date
 }
 
-// TODO: Pt 1 - Create an extension with a mock tracks static var
+// TODO: Pt 1 - Create an extension with a mock movies static var
 extension Movie {
     
     // An array of mock movies
