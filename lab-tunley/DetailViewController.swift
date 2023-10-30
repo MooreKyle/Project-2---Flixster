@@ -12,12 +12,14 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var movieTitleLabel: UILabel!
-    @IBOutlet weak var movieOverviewLabel: UILabel!
-    @IBOutlet weak var albumLabel: UILabel!
     
-    //@IBOutlet weak var genreLabel: UILabel!
-    //@IBOutlet weak var releaseDateLabel: UILabel!
+    @IBOutlet weak var voteAverageLabel: UILabel!
+    
+    @IBOutlet weak var voteCountLabel: UILabel!
+    @IBOutlet weak var popularityLabel: UILabel!
     //@IBOutlet weak var durationLabel: UILabel!
+    
+    @IBOutlet weak var movieOverviewLabel: UILabel!
 
     // TODO: Pt 1 - Add a movie property
 
