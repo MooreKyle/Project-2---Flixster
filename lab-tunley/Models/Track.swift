@@ -7,57 +7,76 @@
 
 import Foundation
 
-// TODO: Pt 1 - Create a Track model struct
-struct Track {
-    let trackName: String
-    let artistName: String
-    let artworkUrl100: URL
-    
-    // Detail properties
-    let collectionName: String
-    let primaryGenreName: String
+// TODO: Pt 1 - Create a Movie model struct
+struct Movie {
+    let title: String
+    let overview: String
+    let posterImageURL: URL
+    let backdropImageURL: URL
+    let voteAverage: Float
+    let voteCount: Int
+    let popularity: Float
     let releaseDate: Date
-    let trackTimeMillis: Int
 }
 
 // TODO: Pt 1 - Create an extension with a mock tracks static var
-extension Track {
+extension Movie {
     
-    /// An array of mock tracks
-    static var mockTracks: [Track]  = [
-        Track(trackName: "Ice Cream",
-              artistName: "BLACKPINK & Selena Gomez",
-              artworkUrl100: URL(string:"https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/c3/64/46/c364465f-6271-8aae-93a8-b9979d2befe5/20UMGIM82075.rgb.jpg/100x100bb.jpg")!,
-             collectionName: "The Album",
-             primaryGenreName: "K-Pop",
-              releaseDate: Date(),
-              trackTimeMillis: 157705),
-        Track(trackName: "Sour Candy",
-              artistName: "Lady Gaga & BLACKPINK",
-              artworkUrl100: URL(string: "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/5d/4d/f9/5d4df96a-e95e-2fe9-404a-5d570513762d/20UMGIM15390.rgb.jpg/100x100bb.jpg")!,
-              collectionName: "The Album",
-              primaryGenreName: "K-Pop",
-               releaseDate: Date(),
-               trackTimeMillis: 157705),
-        Track(trackName: "WHISTLE",
-              artistName: "BLACKPINK",
-              artworkUrl100: URL(string: "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/89/eb/82/89eb82a7-52ec-9e02-87e9-fcc0ac7e0377/BLACKPINK_SQUARE2-1.jpg/100x100bb.jpg")!,
-              collectionName: "The Album",
-              primaryGenreName: "K-Pop",
-               releaseDate: Date(),
-               trackTimeMillis: 157705)
+    // An array of mock movies
+    static var mockMovies: [Movie]  = [
+        Movie(title: "Five Nights at Freddy's",
+              overview: "Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.",
+              posterImageURL: URL(string: "https://example.com/five_nights_poster.jpg")!,
+              backdropImageURL: URL(string: "https://example.com/five_nights_backdrop.jpg")!,
+              voteAverage: 8.485,
+              voteCount: 746,
+              popularity: 3635.108,
+              releaseDate: Date()),
+        Movie(title: "The Matrix Resurrections",
+              overview: "Return to a world of two realities: one, everyday life; the other, what lies behind it. To find out if his reality is a construct, to truly know himself, Mr. Anderson will have to choose to follow the white rabbit once more.",
+              posterImageURL: URL(string: "https://example.com/matrix_resurrections_poster.jpg")!,
+              backdropImageURL: URL(string: "https://example.com/matrix_resurrections_backdrop.jpg")!,
+              voteAverage: 7.589,
+              voteCount: 982,
+              popularity: 2395.312,
+              releaseDate: Date()),
+        Movie(title: "Dune",
+              overview: "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and people.",
+              posterImageURL: URL(string: "https://example.com/dune_poster.jpg")!,
+              backdropImageURL: URL(string: "https://example.com/dune_backdrop.jpg")!,
+              voteAverage: 8.134,
+              voteCount: 5276,
+              popularity: 2348.421,
+              releaseDate: Date()),
+        Movie(title: "No Time to Die",
+              overview: "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+              posterImageURL: URL(string: "https://example.com/no_time_to_die_poster.jpg")!,
+              backdropImageURL: URL(string: "https://example.com/no_time_to_die_backdrop.jpg")!,
+              voteAverage: 7.438,
+              voteCount: 3482,
+              popularity: 1987.732,
+              releaseDate: Date()),
+        Movie(title: "Shang-Chi and the Legend of the Ten Rings",
+              overview: "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+              posterImageURL: URL(string: "https://example.com/shang_chi_poster.jpg")!,
+              backdropImageURL: URL(string: "https://example.com/shang_chi_backdrop.jpg")!,
+              voteAverage: 7.648,
+              voteCount: 2750,
+              popularity: 2105.972,
+              releaseDate: Date())
     ]
-
-    // We can now access this array of mock tracks anywhere like this:
-    // let tracks = Tracks.mockTracks
-    
 }
+
+    // We can now access this array of mock movies anywhere like this:
+    // let movies = Movie.mockMovies
+    
+
 
 // MARK: Helper Methods
 /// Converts milliseconds to mm:ss format
 ///  ex:  208643 -> "3:28"
 ///  ex:
-func formattedTrackDuration(with milliseconds: Int) -> String {
+/*func formattedTrackDuration(with milliseconds: Int) -> String {
     let (minutes, seconds) = milliseconds.quotientAndRemainder(dividingBy: 60 * 1000)
     let truncatedSeconds = seconds / 1000
     if truncatedSeconds >= 10 {
@@ -66,3 +85,4 @@ func formattedTrackDuration(with milliseconds: Int) -> String {
         return "\(minutes):0\(truncatedSeconds)"
     }
 }
+*/
