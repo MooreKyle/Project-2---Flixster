@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tracks-->
+        <!--Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TracksViewController" customModule="lab_tunley" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Movies" customClass="TracksViewController" customModule="lab_tunley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
                             <constraint firstItem="iL1-aa-kkJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yb1-cN-owg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tracks" id="RN7-BY-7fn"/>
+                    <navigationItem key="navigationItem" title="Movies" id="RN7-BY-7fn" userLabel="Movies"/>
                     <connections>
                         <outlet property="tableView" destination="iL1-aa-kkJ" id="qgM-pq-Pc0"/>
                     </connections>
