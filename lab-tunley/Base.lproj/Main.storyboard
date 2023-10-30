@@ -12,7 +12,7 @@
         <!--Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Movies" customClass="TracksViewController" customModule="lab_tunley" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Movies" customClass="MoviesViewController" customModule="lab_tunley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="143" id="2hG-3F-edZ" customClass="TrackCell" customModule="lab_tunley" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="143" id="2hG-3F-edZ" userLabel="MovieCell" customClass="MovieCell" customModule="lab_tunley" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2hG-3F-edZ" id="I8L-BU-BLK">
@@ -31,7 +31,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="koc-Mc-we5">
                                                     <rect key="frame" x="16" y="16" width="361" height="111"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E1V-66-sw2" userLabel="Track Image View">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E1V-66-sw2" userLabel="Movie Image View">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="cdL-CP-q2u"/>
@@ -41,13 +41,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QgL-yQ-fXx">
                                                             <rect key="frame" x="116" y="0.0" width="245" height="70"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice Cream" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTd-7n-S99">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice Cream" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTd-7n-S99" userLabel="Movie Title Label">
                                                                     <rect key="frame" x="0.0" y="0.0" width="122" height="33.666666666666664"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLACKPINK &amp; Selena Gomez" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZO-AF-w7x">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLACKPINK &amp; Selena Gomez" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZO-AF-w7x" userLabel="Movie Overview Label">
                                                                     <rect key="frame" x="0.0" y="49.666666666666671" width="220.66666666666666" height="20.333333333333329"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <nil key="textColor"/>
@@ -66,9 +66,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="artistNameLabel" destination="vZO-AF-w7x" id="YyB-r3-5ea"/>
-                                            <outlet property="trackImageView" destination="E1V-66-sw2" id="eEB-yc-B57"/>
-                                            <outlet property="trackNameLabel" destination="zTd-7n-S99" id="bd1-o0-oes"/>
+                                            <outlet property="movieImageView" destination="E1V-66-sw2" id="qTS-Si-W9Z"/>
+                                            <outlet property="movieOverviewLabel" destination="vZO-AF-w7x" id="RCv-E5-SzL"/>
+                                            <outlet property="movieTitleLabel" destination="zTd-7n-S99" id="LY3-9j-Lch"/>
                                             <segue destination="WgW-3b-CZ7" kind="show" id="uw8-TQ-awW"/>
                                         </connections>
                                     </tableViewCell>
