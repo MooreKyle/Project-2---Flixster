@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
-//  lab-tunley
+//  MoviesViewController.swift
+//  Project 3 - Flixster Part 2
 //
-//  Created by Charlie Hieger on 12/1/22.
+//  Created by Kyle Moore on 10/31/23.
 //
 
 import UIKit
 
-class TracksViewController: UIViewController, UITableViewDataSource {
+class MoviesViewController: UIViewController, UITableViewDataSource {
 
-    var tracks: [Track] = []
+    var movies: [Movie] = []
 
     @IBOutlet weak var tableView: UITableView!
 

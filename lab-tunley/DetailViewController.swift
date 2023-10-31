@@ -1,8 +1,8 @@
 //
 //  DetailViewController.swift
-//  lab-tunley
+//  Project 3 - Flixster Part 2
 //
-//  Created by Charlie Hieger on 12/5/22.
+//  Created by Kyle Moore on 10/31/23.
 //
 
 import UIKit
@@ -10,33 +10,33 @@ import Nuke
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var trackImageView: UIImageView!
-    @IBOutlet weak var trackNameLabel: UILabel!
+    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var movieTitleLabel: UILabel!
 
-    @IBOutlet weak var artistLabel: UILabel!
-    @IBOutlet weak var albumLabel: UILabel!
+    @IBOutlet weak var directorLabel: UILabel!
+    //@IBOutlet weak var albumLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
 
-    var track: Track!
+    var movie: Movie!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Nuke.loadImage(with: track.artworkUrl100, into: trackImageView)
-        trackNameLabel.text = track.trackName
-        artistLabel.text = track.artistName
-        albumLabel.text = track.collectionName
-        genreLabel.text = track.primaryGenreName
+        Nuke.loadImage(with: movie.posterURL, into: movieImageView)
+        movieTitleLabel.text = movie.title
+        directorLabel.text = movie.director
+        //albumLabel.text = track.collectionName
+        genreLabel.text = movie.genre
 
         // Create a date formatter to style our date and convert it to a string
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
-        releaseDateLabel.text = dateFormatter.string(from: track.releaseDate)
+        releaseDateLabel.text = dateFormatter.string(from: movie.releaseDate)
 
-        // Use helper method to convert milliseconds into `mm:ss` string format
-        durationLabel.text = formattedTrackDuration(with: track.trackTimeMillis)
+        // Use helper method to convert minutes into `hh:mm` string format
+        durationLabel.text = formattedMovieDuration(with: movie.durationInMinutes)
 
     }
 
