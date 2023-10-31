@@ -16,7 +16,7 @@
 		CB7254E62939D37800F531FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7254E42939D37800F531FB /* Main.storyboard */; };
 		CB7254E82939D37A00F531FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7254E72939D37A00F531FB /* Assets.xcassets */; };
 		CB7254EB2939D37A00F531FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7254E92939D37A00F531FB /* LaunchScreen.storyboard */; };
-		CB7254F6293B224000F531FB /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7254F5293B224000F531FB /* Track.swift */; };
+		CB7254F6293B224000F531FB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7254F5293B224000F531FB /* Movie.swift */; };
 		CB7254F9293B58DA00F531FB /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7254F8293B58DA00F531FB /* TrackCell.swift */; };
 		CB7254FF293B610C00F531FB /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = CB7254FE293B610C00F531FB /* Nuke */; };
 		CB8B1547293EFCA100397B69 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B1546293EFCA100397B69 /* DetailViewController.swift */; };
@@ -34,7 +34,7 @@
 		CB7254E72939D37A00F531FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB7254EA2939D37A00F531FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB7254EC2939D37A00F531FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB7254F5293B224000F531FB /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		CB7254F5293B224000F531FB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CB7254F8293B58DA00F531FB /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		CB8B1546293EFCA100397B69 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 		CB7254F7293B224F00F531FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CB7254F5293B224000F531FB /* Track.swift */,
+				CB7254F5293B224000F531FB /* Movie.swift */,
 				3F1C6BE02AF0E620006E988E /* Album.swift */,
 			);
 			path = Models;
@@ -178,7 +178,7 @@
 				CB7254DF2939D37800F531FB /* AppDelegate.swift in Sources */,
 				CB8B1547293EFCA100397B69 /* DetailViewController.swift in Sources */,
 				CB7254E12939D37800F531FB /* SceneDelegate.swift in Sources */,
-				CB7254F6293B224000F531FB /* Track.swift in Sources */,
+				CB7254F6293B224000F531FB /* Movie.swift in Sources */,
 				3F1C6BE12AF0E620006E988E /* Album.swift in Sources */,
 				3F1C6BE32AF0ECB2006E988E /* AlbumCell.swift in Sources */,
 			);
