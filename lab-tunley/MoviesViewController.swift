@@ -16,10 +16,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // TODO: Pt 1 - Set tracks property with mock tracks array
+        // TODO: Pt 1 - Set movies property with mock movies array
         // Create a URL for the request
         // In this case, the custom search URL you created in in part 1
-        let url = URL(string: "https://itunes.apple.com/search?term=blackpink&attribute=artistTerm&entity=song&media=music")!
+        let apiKey = "8d7c5d5865b199c0d97fa7296ae9ca7f" // Replace with your TMDB API key
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
 
         // Use the URL to instantiate a request
         let request = URLRequest(url: url)
@@ -46,28 +47,36 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
                 // Create a JSON Decoder
                 let decoder = JSONDecoder()
                 
+                
+                
+                
+                
                 // Create a date formatter
-                let dateFormatter = DateFormatter()
+                //let dateFormatter = DateFormatter()
 
                 // Set a custom date format based on what we see coming back in the JSON
-                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                //dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 
                 // Set the decoding strategy on the JSON decoder to use our custom date format
-                decoder.dateDecodingStrategy = .formatted(dateFormatter)
+                //decoder.dateDecodingStrategy = .formatted(dateFormatter)
 
+                
+                
+                
+                
                 // Use the JSON decoder to try and map the data to our custom model.
-                // TrackResponse.self is a reference to the type itself, tells the decoder what to map to.
-                let response = try decoder.decode(TracksResponse.self, from: data)
+                // MoviesResponse.self is a reference to the type itself, tells the decoder what to map to.
+                let response = try decoder.decode(MoviesResponse.self, from: data)
 
-                // Access the array of tracks from the `results` property
-                let tracks = response.results
-                //print("✅ \(tracks)")
+                // Access the array of movies from the `results` property
+                let movies = response.results
+                //print("✅ \(movies)")
                 
                 // Execute UI updates on the main thread when calling from a background callback
                 DispatchQueue.main.async {
 
-                    // Set the view controller's tracks property as this is the one the table view references
-                    self?.tracks = tracks
+                    // Set the view controller's movies property as this is the one the table view references
+                    self?.movies = movies
 
                     // Make the table view reload now that we have new data
                     self?.tableView.reloadData()
@@ -79,7 +88,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
 
         // Initiate the network request
         task.resume()
-        print(tracks)
+        print(movies)
 
         tableView.dataSource = self
         
@@ -109,28 +118,28 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
            let detailViewController = segue.destination as? DetailViewController {
 
             // Use the index path to get the associated track
-            let track = tracks[indexPath.row]
+            let movie = movies[indexPath.row]
 
             // Set the track on the detail view controller
-            detailViewController.track = track
+            detailViewController.movie = movie
         }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tracks.count
+        return movies.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        // Get a cell with identifier, "TrackCell"
+        // Get a cell with identifier, "MovieCell"
         // the `dequeueReusableCell(withIdentifier:)` method just returns a generic UITableViewCell so it's necessary to cast it to our specific custom cell.
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath) as! TrackCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
 
-        // Get the track that corresponds to the table view row
-        let track = tracks[indexPath.row]
+        // Get the movie that corresponds to the table view row
+        let movie = movies[indexPath.row]
 
-        // Configure the cell with it's associated track
-        cell.configure(with: track)
+        // Configure the cell with it's associated movie
+        cell.configure(with: movie)
 
         // return the cell for display in the table view
         return cell
