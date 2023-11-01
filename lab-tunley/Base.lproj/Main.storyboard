@@ -235,11 +235,11 @@
             </objects>
             <point key="canvasLocation" x="2750.3816793893129" y="3.5211267605633805"/>
         </scene>
-        <!--Tracks-->
+        <!--Movies-->
         <scene sceneID="pe2-cI-OjY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UX2-aM-6IO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tracks" image="music.note.list" catalog="system" id="G9p-8J-zmp"/>
+                <navigationController title="Movies" automaticallyAdjustsScrollViewInsets="NO" id="UX2-aM-6IO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movies" image="film.fill" catalog="system" id="G9p-8J-zmp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ma7-vM-Cho">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -355,8 +355,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="film.fill" catalog="system" width="128" height="93"/>
         <image name="guitars.fill" catalog="system" width="128" height="104"/>
-        <image name="music.note.list" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
