@@ -46,6 +46,8 @@ class MoviePostersViewController: UIViewController, UICollectionViewDataSource {
         let request = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            //For Debugging Network Request Issues
+            print("Data task completed")
 
             // Handle any errors
             if let error = error {
@@ -67,6 +69,8 @@ class MoviePostersViewController: UIViewController, UICollectionViewDataSource {
                 
                 DispatchQueue.main.async {
                     self?.moviePosters = moviePosters
+                    //Use this to debug and check if moviePosters is populated - Open Posters tab and check console to see if it prints the loaded movie posters
+                    print("Movie posters loaded: \(moviePosters)")
                     self?.collectionView.reloadData()
                 }
                 // print(albums)

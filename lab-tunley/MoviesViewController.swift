@@ -21,6 +21,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
         // In this case, the custom search URL you created in in part 1
         let apiKey = "REMOVED_TMDB_KEY" // Replace with your TMDB API key
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
+        
+        //let apiKey = "REMOVED_TMDB_KEY" // Replace with your TMDB API key
+        //let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=REMOVED_TMDB_KEY")!
 
         // Use the URL to instantiate a request
         let request = URLRequest(url: url)
@@ -29,6 +32,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
         // The data task method attempts to retrieve the contents of a URL based on the specified URL.
         // When finished, it calls it's completion handler (closure) passing in optional values for data (the data we want to fetch), response (info about the response like status code) and error (if the request was unsuccessful)
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            //For Debugging Network Request Issues
+            print("Data task completed")
 
             // Handle any errors
             if let error = error {
@@ -52,13 +57,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
                 
                 
                 // Create a date formatter
-                //let dateFormatter = DateFormatter()
+                let dateFormatter = DateFormatter()
 
                 // Set a custom date format based on what we see coming back in the JSON
-                //dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 
                 // Set the decoding strategy on the JSON decoder to use our custom date format
-                //decoder.dateDecodingStrategy = .formatted(dateFormatter)
+                decoder.dateDecodingStrategy = .formatted(dateFormatter)
 
                 
                 
