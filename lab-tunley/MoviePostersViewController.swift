@@ -1,31 +1,31 @@
 //
-//  AlbumsViewController.swift
-//  lab-tunley
+//  MoviePostersViewController.swift
+//  Project 3 - Flixster Part 2
 //
-//  Created by student on 10/31/23.
+//  Created by Kyle Moore on 10/31/23.
 //
 
 import UIKit
 import Nuke
 
-class AlbumsViewController: UIViewController, UICollectionViewDataSource {
+class MoviePostersViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // the number of items shown should be the number of albums we have.
-        albums.count
+        // the number of items shown should be the number of movie posters we have.
+        moviePosters.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // Get a collection view cell (based in the identifier you set in storyboard) and cast it to our custom AlbumCell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumCell", for: indexPath) as! AlbumCell
+        // Get a collection view cell (based in the identifier you set in storyboard) and cast it to our custom MovieCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoviePosterCell", for: indexPath) as! MoviePosterCell
 
-        // Use the indexPath.item to index into the albums array to get the corresponding album
-        let album = albums[indexPath.item]
+        // Use the indexPath.item to index into the movies array to get the corresponding album
+        let moviePoster = moviePosters[indexPath.item]
 
-        // Get the artwork image url
-        let imageUrl = album.artworkUrl100
+        // Get the poster image url
+        let imageUrl = moviePoster.posterURL
 
         // Set the image on the image view of the cell
-        Nuke.loadImage(with: imageUrl, into: cell.albumImageView)
+        Nuke.loadImage(with: imageUrl, into: cell.posterImageView)
 
         return cell
     }
@@ -33,7 +33,7 @@ class AlbumsViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var albums: [Album] = []
+    var moviePosters: [MoviePoster] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +41,8 @@ class AlbumsViewController: UIViewController, UICollectionViewDataSource {
         collectionView.dataSource = self
 
         // Do any additional setup after loading the view.
-        // Create a search URL for fetching albums (`entity=album`)
-        let url = URL(string: "https://itunes.apple.com/search?term=blackpink&attribute=artistTerm&entity=album&media=music")!
+        // Create a search URL for fetching movie posters (`entity=*****album*****`)
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=8d7c5d5865b199c0d97fa7296ae9ca7f")!
         let request = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
@@ -62,11 +62,11 @@ class AlbumsViewController: UIViewController, UICollectionViewDataSource {
             let decoder = JSONDecoder()
             do {
                 // Try to parse the response into our custom model
-                let response = try decoder.decode(AlbumSearchResponse.self, from: data)
-                let albums = response.results
+                let response = try decoder.decode(MoviePosterSearchResponse.self, from: data)
+                let moviePosters = response.results
                 
                 DispatchQueue.main.async {
-                    self?.albums = albums
+                    self?.moviePosters = moviePosters
                     self?.collectionView.reloadData()
                 }
                 // print(albums)
