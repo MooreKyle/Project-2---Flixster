@@ -254,10 +254,10 @@
             </objects>
             <point key="canvasLocation" x="1127.4809160305342" y="3.5211267605633805"/>
         </scene>
-        <!--Albums View Controller-->
+        <!--Movie Posters View Controller-->
         <scene sceneID="hvX-Xk-PyL">
             <objects>
-                <viewController id="mNr-rA-1wW" customClass="AlbumsViewController" customModule="lab_tunley" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mNr-rA-1wW" customClass="MoviePostersViewController" customModule="lab_tunley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z5m-sQ-XdZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
