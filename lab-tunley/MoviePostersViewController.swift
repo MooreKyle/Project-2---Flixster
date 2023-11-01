@@ -44,6 +44,9 @@ class MoviePostersViewController: UIViewController, UICollectionViewDataSource {
         // Create a search URL for fetching movie posters (`entity=*****album*****`)
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=REMOVED_TMDB_KEY")!
         let request = URLRequest(url: url)
+        
+        //Debugging Network Request/JSON Parsing Issues
+        print("Before data task")
 
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
             //For Debugging Network Request Issues
@@ -59,6 +62,12 @@ class MoviePostersViewController: UIViewController, UICollectionViewDataSource {
                 print("❌ Data is nil")
                 return
             }
+            
+            //Debugging of Networking Issues/JSON Parsing - Prints raw data received from the API to ensure we're getting valid JSON
+            print(String(data: data, encoding: .utf8) ?? "Unable to decode data as UTF-8 string")
+            
+            //Debugging Network Request/JSON Parsing Issues
+            print(data)
 
             // Create a JSON Decoder
             let decoder = JSONDecoder()
@@ -66,6 +75,9 @@ class MoviePostersViewController: UIViewController, UICollectionViewDataSource {
                 // Try to parse the response into our custom model
                 let response = try decoder.decode(MoviePosterSearchResponse.self, from: data)
                 let moviePosters = response.results
+                
+                //Debugging Network Request/JSON Parsing Issues
+                print(moviePosters)
                 
                 DispatchQueue.main.async {
                     self?.moviePosters = moviePosters
