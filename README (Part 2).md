@@ -38,7 +38,7 @@ Figuring out how to get API recognized as it seems to be bugged. Items do not sh
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Kyle Moore]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
